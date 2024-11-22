@@ -10,7 +10,10 @@ df = pd.read_csv('india.csv')
 list_of_states = list(df['State'].unique())
 list_of_states.insert(0,'Overall India')
 
-st.sidebar.title('India Ka Data Viz')
+st.title('Welcom to Data Visualization Project')
+st.subheader('< Explore Sidebar')
+
+st.sidebar.title('Data Visualization on India')
 
 selected_state = st.sidebar.selectbox('Select a state',list_of_states)
 primary = st.sidebar.selectbox('Select Primary Parameter',sorted(df.columns[5:]))
